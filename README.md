@@ -2,9 +2,9 @@
 
 Formålet med denne øvelse, er at få afprøvet git koncepterne `fork`, `branch`, `merge` og `pull request`
 
-Det er nogle stærke værktøjer der kan benyttes til at splitte udviklingen af applipkationer, enten ud over flere personer, eller lokalt i flere grene. 
+Det er nogle stærke værktøjer der kan benyttes til at splitte udviklingen af applikationer, enten ud over flere personer, eller lokalt i flere grene. 
 
-Ved at benytte sig af værktøjerne, vil man altid have en fungernde `master` og en (eller flere) `brances` for hvert nye emne der skal tilføjes applikationen.
+Ved at benytte sig af værktøjerne, vil man altid have en fungerende `master` og en *(eller flere)* `brances` for hvert nye emne der skal tilføjes applikationen.
 
 
 ## FORK
@@ -19,7 +19,7 @@ Ved at benytte sig af værktøjerne, vil man altid have en fungernde `master` og
 
 
 ## Branches 
-I Visual Studio Code, nederst til venstre klikkes på `master` og derefter i toppen af programmet vælges `+ Create Branch` samt der angives et nyt navn til den nye `branch` kunne f.eks. være `dev` 
+I Visual Studio Code, nederst til venstre hjørne, klikkes på `master` og derefter i toppen af programmet vælges `+ Create Branch` samt der angives et nyt navn til den nye `branch` kunne f.eks. være `dev` 
 
 *måske vil programmet spørge ind til `select a ref to create a branch from`.  Vælg `master` hvis det kommer frem, ellers vil den pr default vælge `master`*
 
@@ -29,7 +29,7 @@ I den nye `dev branch` oprettes et nyt html-dokument, kald dokumentet dit eget n
 
 Indsæt lidt htmlkode, f.eks. en overskrift og et par linjer tekst om dig selv.
 
-`commit` den nye `branch` og push til github. 
+`commit` den nye `branch` og `push` til github. 
 
 Første gang en branch pushes til github, vil den komme frem og spørge om du vil oprette en `upstream branch` det siger du ja tak til, så vil din branch også eksistere online.
 
@@ -37,7 +37,7 @@ Første gang en branch pushes til github, vil den komme frem og spørge om du vi
 
 
 ## Merge
-Gå på github til dit klonede repository, og tjek at master og dev branch er forskellige. Er de ikke forskellige, eller mangler `dev`så mangler du måske at `pushe` ændringerne til github. 
+Gå på github til dit klonede repository, og tjek at `master` og `dev` branch er forskellige. Er de ikke forskellige, eller mangler `dev` så mangler du måske at `pushe` ændringerne til github. 
 
 Klik på `Compare & Pull request` så de to `branches` kan flettes sammen.
 
@@ -69,8 +69,8 @@ Når du vil opdatere din fork, med de nye filer der er blevet pushet, til det op
 I terminal vinduet i Visual Studio Code, skrives de her to linjer:
 
 ```
-    git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
-    git fetch upstream
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
 ```
 
 `ORIGINAL-DEV-USERNAME` skal i dette tilfælde erstattes med `rts-cmk-WI81` og
@@ -81,7 +81,7 @@ I terminal vinduet i Visual Studio Code, skrives de her to linjer:
 
 For at hente ændringerne, køres denne kommando *(stadig i terminalen i VScode)*, som placerer ændringerne i din `master`
 ```
-    git pull upstream master
+git pull upstream master
 ```
 
 *Øvelsen er klaret, når alle er kommet igennem alle punkterne, og alle har en fuldt opdateret fork, som indeholder samtlige html filer de andre har oprettet.*
